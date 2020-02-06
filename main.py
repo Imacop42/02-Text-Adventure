@@ -2,7 +2,7 @@ import sys, os, json
 assert sys.version_info >= (3,7), "This script requires at least Python 3.7"
 
 
-game_file = 'document.json'
+game_file = 'document (1).json'
 item_file = 'items.json'
 inventory = []
 
@@ -111,6 +111,12 @@ def main():
 
     while True:
         render(game,items,current)
+
+        if current in end_game:
+            break
+
+
+
         response = get_input()
 
         if response == "QUIT":
@@ -118,7 +124,7 @@ def main():
 
         current = update(game,items,current,response)
     
-    print("Thanks for playing!")
+    print("\n\nThanks for playing!\n\n")
     
 
 

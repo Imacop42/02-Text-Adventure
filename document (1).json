@@ -100,10 +100,10 @@
 	},
 	"PORCH": {
 		"name": "Colonial House",
-		"desc": "You arrive at the front of the large house. It is two stories tall and Wider than it is deep.",
+		"desc": "You arrive at the front of the large house. It is two stories tall and Wider than it is deep.\nThe door is to your east.",
 		"exits": [{
 			"exit": "EAST",
-			"target": ""
+			"target": "RLIVE"
 		}, {
 			"exit": "WEST",
 			"target": ""
