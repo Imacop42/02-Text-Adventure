@@ -1,0 +1,165 @@
+{
+	"FIELD": {
+		"name": "Central Field",
+		"desc": "You are in the middle of a great wheat meadow, with the wind blowing waves throughout it.\n To the east, a sturdy and solitary tree stands amidst the wheat.\n To the north, you can make out a wooded area in the distance.\n to the south, the fields extend idefinitely.\n quite a way to the west, you can see a hill.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "CWDAP"
+		},{
+			"exit": "WEST",
+			"target": "HILL"
+		},{
+			"exit": "EAST",
+			"target": "TREE"
+		}],
+		"items": []
+	},
+	"HILL": {
+		"name": "Hill",
+		"desc": "After Walking through the fields for a while, you've made it to the hill.\nOnce atop the hill, you have a much better view of the area.\nFar to the east, past the tree, you can see a house.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "FIELD"
+		}],
+		"items": []
+	},
+	"CWDAP": {
+		"name": "Central Woods Approach",
+		"desc": "You are approaching the woods to the north and begining to leave the fields behind you.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "CWOOD"
+		}, {
+			"exit": "SOUTH",
+			"target": "FIELD"
+		}],
+		"items": []
+	},
+	"TREE": {
+		"name": "Solitary Tree",
+		"desc": "You've made it to the tree. it prvides some nice shade for the area around it.\nFrom here you can see what appears to be a colonial house, further to the east.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "HOSAP"
+		}, {
+			"exit": "WEST",
+			"target": "FIELD"
+		}],
+		"items": []
+	},
+	"CWOOD": {
+		"name": "Central Woods",
+		"desc": " After walking a ways into the woods, you stumble across a path that goes east-west.\nTo the south of you, you can see the wheat fields just outside the trees.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "EWOOD"
+		}, {
+			"exit": "WEST",
+			"target": "WWOOD"
+		}, {
+			"exit": "SOUTH",
+			"target": "WWOOD"
+		}],
+		"items": []
+	},
+	"WWOOD": {
+		"name": "Western Woods",
+		"desc": "A Strange Feeling washes over you as you walk this way, and eventually you come a cross a strange, swirling, ethereal barrier.\nIt blocks any further movement in the direction and it seems to extend further through the woods on your sides. It looks like the only way to go is back east.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "CWOOD"
+		}],
+		"items": []
+	},
+	"EWOOD": {
+		"name": "Eastern Woods",
+		"desc": "You're on a trail in the woods. The path curves here.\nTo the west, it leads further into the forest. To the south, the path appears to lead out of the woods",
+		"exits": [{
+			"exit": "WEST",
+			"target": "CWOOD"
+		}, {
+			"exit": "SOUTH",
+			"target": "EWDAP"
+		}],
+		"items": []
+	},
+	"EWDAP": {
+		"name": "Eastern Woods Approach",
+		"desc": "You are now on a path going north-south.You can see woods to the north, and a decently-sized colonial house just to the south. To the west are the fields of wheat",
+		"exits": [{
+			"exit": "WEST",
+			"target": "FIELD"
+		}, {
+			"exit": "NORTH",
+			"target": "EWOOD"
+		}, {
+			"exit": "SOUTH",
+			"target": "PORCH"
+		}],
+		"items": []
+	},
+	"PORCH": {
+		"name": "Colonial House",
+		"desc": "You arrive at the front of the large house. It is two stories tall and Wider than it is deep.",
+		"exits": [{
+			"exit": "EAST",
+			"target": ""
+		}, {
+			"exit": "WEST",
+			"target": ""
+		}, {
+			"exit": "EXIT",
+			"target": ""
+		}, {
+			"exit": "",
+			"target": ""
+		}],
+		"items": []
+	},
+	"HOSAP": {
+		"name": "House Approach",
+		"desc": "The fields end/begin right here. to the west, you can see a tree among the wheat. To the east, the house is just ahead.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "PORCH"
+		}, {
+			"exit": "WEST",
+			"target": "TREE"
+		}, {
+			"exit": "EXIT",
+			"target": ""
+		}, {
+			"exit": "",
+			"target": ""
+		}],
+		"items": []
+	},
+	"RLIVE": {
+		"name": "Living Room",
+		"desc": "You're in a large living room with various other rooms nearby. However, every single room is locked or blocked from the other side.\nThe only avaliable route is up the stairs.",
+		"exits": [{
+			"exit": "UP",
+			"target": "GALLE"
+		}],
+		"items": []
+	},
+	"GALLE": {
+		"name": "Gallery",
+		"desc": "Upon opening the door at the top of the stairs, you enter a large room, filled with paintings.\nEvery painting is a beautiful nature scene, all with the same signature, a singular S.\nHowever, you hear a low, ethereal humming coming from a doorin the center on the north side of the room.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "END"
+		}],
+		"items": []
+	},
+	"END": {
+		"name": "Painting",
+		"desc": "You open the door, and enter another room. A singular, large painting lies in the middle of the room. It takes you a few seconds but you soon recognise the painting.\nThe painting is a grand scene. It contians a great field of wheat, with a singular tree and a house.\n\nThe humming is coming from the painting. you feel drawn to it.\n\nAs you aproach, the humming gets louder.\nAs you reach out to touch it, everything goes black.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "PAINT"
+		}],
+		"items": []
+	}
+
+}
